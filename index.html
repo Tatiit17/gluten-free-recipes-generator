@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>GF recipes generator</title>
 </head>
 
@@ -14,14 +15,12 @@
             <h1>Gluten-free recipes generator</h1>
         </header>
         <main>
-            <form action="">
+            <form action="" id="form-recipes-generator">
                 <input type="text" placeholder="Enter key ingredients" autofocus autocomplete="off" required
                     class="instructions" />
                 <input type="submit" class="button" />
             </form>
-            <div class="recipe">
-                recipe
-            </div>
+            <div class="recipe" id="recipe"></div>
         </main>
         <footer>
             This AI project was coded by <a href="https://github.com/Tatiit17" target="_blank">Tati Italmazava</a> and
