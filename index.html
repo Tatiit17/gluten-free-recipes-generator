@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>GF recipes generator</title>
 </head>
 
@@ -17,7 +18,7 @@
         <main>
             <form action="" id="form-recipes-generator">
                 <input type="text" placeholder="Enter key ingredients" autofocus autocomplete="off" required
-                    class="instructions" />
+                    class="instructions" id="recipe-ingredients" />
                 <input type="submit" class="button" />
             </form>
             <div class="recipe" id="recipe"></div>
