@@ -17,6 +17,10 @@ function generateRecipes(event) {
 	let prompt = `User instructions: Generate a gluten-free recipe with the following ${recipeInput.value}`;
 	let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+	let recipeElement = document.querySelector("#recipe");
+	recipeElement.classList.remove("hidden");
+	recipeElement.innerHTML = `<div class="generating">⏳ Generating GF recipe with ${recipeInput.value}</div>`;
+
 	axios.get(apiUrl).then(displayRecipe);
 }
 
